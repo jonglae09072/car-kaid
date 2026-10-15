@@ -541,20 +541,10 @@
             }
         }
     </style>
+    <!-- 애드센스 기본 스크립트는 head 내부에 위치시키는 것이 가장 안전합니다 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9070583566380500" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9070583566380500" crossorigin="anonymous"></script>
-<!-- 디스플레이 광고 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9070583566380500"
-     data-ad-slot="9939287892"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
     <!-- HEADER -->
     <header>
         <div class="nav-container">
@@ -624,6 +614,20 @@
             </div>
         </section>
 
+        <!-- 본문 중간 광고 1 (지원 제조사 섹션 바로 아래) -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; text-align: center;">
+            <!-- 디스플레이 광고 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9070583566380500"
+                 data-ad-slot="9939287892"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
         <!-- SERVICES SECTION -->
         <section id="services">
             <div class="section-header">
@@ -649,111 +653,4 @@
             </div>
         </section>
 
-        <!-- INQUIRY FORM -->
-        <section id="inquiry">
-            <div class="section-header">
-                <h2>Sourcing Inquiry / Request a Quote</h2>
-                <p>Fill in the part requirements such as Part numbers, Q'ty, and Brands on an Excel file and then attach it to the e-mail below. Or through Whatsapp</p>
-            </div>
-
-            <!-- CONTACT DETAILS -->
-            <div class="contact-info" id="contact">
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="info-text">
-                        <h4>Email Inquiry</h4>
-                        <p>jonglae09072@gmail.com</p>
-                        <p>car-kaid@naver.com</p>                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="info-text">
-                        <h4>Direct Contact</h4>
-                        <p>+82-10-3358-3268 (Whatsapp)</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="info-text">
-                        <h4>Office Address</h4>
-                        <p>Room B140, 228, Bugwang-ro, Sosa-gu, Bucheon-si, Gyeonggi-do, Korea</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                Korean Autoparts Industrial Distributing Agent
-            </div>
-            <ul class="footer-links">
-                <li><a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a></li>
-                <li><a href="#contact">Contact Support</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 KAID Auto Parts Sourcing Agency. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- PRIVACY POLICY MODAL -->
-    <div class="modal" id="privacyModal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('privacy')">&times;</span>
-            <h2 style="margin-bottom: 1rem; color: var(--primary);">Privacy Policy</h2>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Effective Date: January 1, 2026</p>
-
-            <h3>1. Information We Collect</h3>
-            <p>When you fill out our sourcing inquiry form, we collect personal information including your name, email address, company name, country, and specific product inquiries.</p>
-            <br>
-            <h3>2. How We Use Your Information</h3>
-            <p>We use the collected information strictly for responding to your price quote requests, arranging export logistics, and facilitating B2B communications.</p>
-            <br>
-            <h3>3. Information Sharing</h3>
-            <p>We do not sell, trade, or rent your personal information to third parties. We may share necessary details with trusted shipping line logistics partners solely for fulfilling your orders.</p>
-            <br>
-            <h3>4. Cookie Preferences & Tracking Opt-Out</h3>
-            <p>You can manage or block cookies through your individual browser settings at any time.</p>
-            <br>
-            <h3>5. Contact Us</h3>
-            <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
-            <p><strong>E-mail:</strong> car-kaid@naver.com</p>
-            <p><strong>Address:</strong> Room B140, 228, Bugwang-ro, Sosa-gu, Bucheon-si, Gyeonggi-do, Korea</p>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT -->
-    <script>
-        // Mobile Navbar Toggle Function
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
-        }
-
-        // Privacy Modal Functions
-        function openModal(id) {
-            if(id === 'privacy') {
-                document.getElementById('privacyModal').style.display = 'flex';
-            }
-        }
-
-        function closeModal(id) {
-            if(id === 'privacy') {
-                document.getElementById('privacyModal').style.display = 'none';
-            }
-        }
-
-        // Close modal when clicking outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('privacyModal');
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-
-    </script>
-</body>
-</html>
+        <!--
